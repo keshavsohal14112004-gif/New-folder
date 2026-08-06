@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEVERMIND | Premium Fashion</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons (Lightweight Vanilla alternative to FontAwesome) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-text">NEVERMIND</div>
+        <div class="loader-progress"></div>
+    </div>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>LIMITED RELEASES. EXCLUSIVE DROPS. ELEGANCE IS NOW LIVE.</p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#catalog" class="nav-link">Catalog</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="logo">
+            <a href="#">NEVERMIND</a>
+        </div>
+        <div class="nav-icons">
+            <button aria-label="Search"><i class="ph ph-magnifying-glass"></i></button>
+            <button aria-label="Profile"><i class="ph ph-user"></i></button>
+            <button aria-label="Cart" class="cart-btn"><i class="ph ph-shopping-bag"></i><span class="cart-count">0</span></button>
+        </div>
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-btn">
+            <i class="ph ph-list"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <button class="close-menu-btn"><i class="ph ph-x"></i></button>
+        <div class="mobile-nav-links">
+            <a href="#home">Home</a>
+            <a href="#catalog">Catalog</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Scroll Progress Bar -->
+        <div class="scroll-progress"></div>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-slider">
+                <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1523398002811-999aa8e95707?q=80&w=2070&auto=format&fit=crop');"></div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop');"></div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1618099300676-e89cc866cc80?q=80&w=1974&auto=format&fit=crop');"></div>
+            </div>
+            <div class="hero-content reveal-text">
+                <h1 class="hero-title">STYLE<br>VIBE<br>REFLECT</h1>
+                <p class="hero-subtitle">Redefining streetwear with precision and elegance.</p>
+                <a href="#new-arrivals" class="btn btn-primary magnetic-btn">EXPLORE COLLECTION</a>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infinite Marquee -->
+        <div class="marquee-wrapper">
+            <div class="marquee">
+                <span><i class="ph ph-star-four"></i> DESIGNED TO DISRUPT</span>
+                <span><i class="ph ph-star-four"></i> LIMITED RELEASES</span>
+                <span><i class="ph ph-star-four"></i> PREMIUM MATERIALS</span>
+                <span><i class="ph ph-star-four"></i> EXCLUSIVE DROPS</span>
+                <span><i class="ph ph-star-four"></i> DESIGNED TO DISRUPT</span>
+                <span><i class="ph ph-star-four"></i> LIMITED RELEASES</span>
+                <span><i class="ph ph-star-four"></i> PREMIUM MATERIALS</span>
+                <span><i class="ph ph-star-four"></i> EXCLUSIVE DROPS</span>
+            </div>
+        </div>
+
+        <!-- Brand Story Section -->
+        <section id="about" class="story-section section-padding">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="story-text reveal-left">
+                        <h2 class="section-title">THE NEW STANDARD</h2>
+                        <p class="section-desc">We don't follow trends; we forge them. Nevermind is a testament to the uncompromising pursuit of perfection. From the drape of a heavyweight hoodie to the meticulous stitch of a tailored silhouette, every piece is designed for those who command a room without speaking.</p>
+                        <a href="#catalog" class="btn btn-outline magnetic-btn">DISCOVER OUR ESSENCE</a>
+                    </div>
+                    <div class="story-images">
+                        <div class="story-img-wrapper img-1 reveal-up" data-speed="0.8">
+                            <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=1965&auto=format&fit=crop" alt="Brand Aesthetics">
+                        </div>
+                        <div class="story-img-wrapper img-2 reveal-up" data-speed="1.2" style="transition-delay: 0.2s;">
+                            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1974&auto=format&fit=crop" alt="Fashion Model">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Arrivals (Horizontal Slider) -->
+        <section id="new-arrivals" class="slider-section section-padding bg-light">
+            <div class="container-fluid">
+                <div class="section-header container reveal-up">
+                    <h2 class="section-title">NEW ARRIVALS</h2>
+                    <div class="slider-controls">
+                        <button class="slider-btn prev-btn"><i class="ph ph-arrow-left"></i></button>
+                        <button class="slider-btn next-btn"><i class="ph ph-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="product-slider-container">
+                    <div class="product-slider">
+                        <!-- Product 1 -->
+                        <div class="product-card slide-card">
+                            <div class="product-image-wrapper">
+                                <span class="badge new-badge">New</span>
+                                <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=1972&auto=format&fit=crop" alt="White Graphic Hoodie" class="product-img main-img">
+                                <img src="https://images.unsplash.com/photo-1620799139834-6b8f844fbe61?q=80&w=1972&auto=format&fit=crop" alt="White Graphic Hoodie Alt" class="product-img hover-img">
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Quick View"><i class="ph ph-eye"></i></button>
+                                    <button class="action-btn" title="Add to Wishlist"><i class="ph ph-heart"></i></button>
+                                    <button class="action-btn add-to-cart" title="Add to Cart"><i class="ph ph-shopping-bag"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Smile Graphic Oversized Hoodie</h3>
+                                <div class="product-price">
+                                    <span class="new-price">$95.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="product-card slide-card">
+                            <div class="product-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=1974&auto=format&fit=crop" alt="Black T-Shirt" class="product-img main-img">
+                                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=2080&auto=format&fit=crop" alt="Black T-Shirt Alt" class="product-img hover-img">
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Quick View"><i class="ph ph-eye"></i></button>
+                                    <button class="action-btn" title="Add to Wishlist"><i class="ph ph-heart"></i></button>
+                                    <button class="action-btn add-to-cart" title="Add to Cart"><i class="ph ph-shopping-bag"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Essential Heavyweight Tee</h3>
+                                <div class="product-price">
+                                    <span class="new-price">$55.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product 3 -->
+                        <div class="product-card slide-card">
+                            <div class="product-image-wrapper">
+                                <span class="badge limited-badge">Limited</span>
+                                <img src="https://images.unsplash.com/photo-1554568218-0f1715e72254?q=80&w=1974&auto=format&fit=crop" alt="White T-Shirt" class="product-img main-img">
+                                <img src="https://images.unsplash.com/photo-1622445275463-afa2ab738c34?q=80&w=1974&auto=format&fit=crop" alt="White T-Shirt Alt" class="product-img hover-img">
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Quick View"><i class="ph ph-eye"></i></button>
+                                    <button class="action-btn" title="Add to Wishlist"><i class="ph ph-heart"></i></button>
+                                    <button class="action-btn add-to-cart" title="Add to Cart"><i class="ph ph-shopping-bag"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Logo Type Premium Tee</h3>
+                                <div class="product-price">
+                                    <span class="new-price">$60.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product 4 -->
+                        <div class="product-card slide-card">
+                            <div class="product-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=1974&auto=format&fit=crop" alt="Sneakers" class="product-img main-img">
+                                <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=1925&auto=format&fit=crop" alt="Sneakers Alt" class="product-img hover-img">
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Quick View"><i class="ph ph-eye"></i></button>
+                                    <button class="action-btn" title="Add to Wishlist"><i class="ph ph-heart"></i></button>
+                                    <button class="action-btn add-to-cart" title="Add to Cart"><i class="ph ph-shopping-bag"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Chunky Trainer v2</h3>
+                                <div class="product-price">
+                                    <span class="new-price">$180.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product 5 -->
+                        <div class="product-card slide-card">
+                            <div class="product-image-wrapper">
+                                <span class="badge sale-badge">Sale</span>
+                                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=1936&auto=format&fit=crop" alt="Jacket" class="product-img main-img">
+                                <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=1935&auto=format&fit=crop" alt="Jacket Alt" class="product-img hover-img">
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Quick View"><i class="ph ph-eye"></i></button>
+                                    <button class="action-btn" title="Add to Wishlist"><i class="ph ph-heart"></i></button>
+                                    <button class="action-btn add-to-cart" title="Add to Cart"><i class="ph ph-shopping-bag"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Leather Biker Jacket</h3>
+                                <div class="product-price">
+                                    <span class="old-price">$450.00</span>
+                                    <span class="new-price">$320.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lookbook / Editorial -->
+        <section class="lookbook-section">
+            <div class="lookbook-container">
+                <div class="lookbook-item parallax-item">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1920&auto=format&fit=crop" alt="Lookbook 1">
+                    <div class="lookbook-overlay">
+                        <h2>URBAN ELEGANCE</h2>
+                        <a href="#" class="btn btn-outline">EXPLORE LOOK</a>
+                    </div>
+                </div>
+                <div class="lookbook-item parallax-item">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop" alt="Lookbook 2">
+                    <div class="lookbook-overlay">
+                        <h2>THE NIGHT SHIFT</h2>
+                        <a href="#" class="btn btn-outline">EXPLORE LOOK</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Sellers Grid -->
+        <section id="catalog" class="catalog-section section-padding">
+            <div class="container">
+                <div class="section-header text-center reveal-up mb-5">
+                    <h2 class="section-title">BEST SELLERS</h2>
+                    <p class="section-desc">The pieces defining the current season.</p>
+                </div>
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card reveal-up">
+                        <div class="product-image-wrapper">
+                            <span class="badge sale-badge">Sale</span>
+                            <img src="https://images.unsplash.com/photo-1509942774463-acf339cf87d5?q=80&w=1974&auto=format&fit=crop" alt="Varsity Jacket" class="product-img main-img">
+                            <img src="https://images.unsplash.com/photo-1509942774463-acf339cf87d5?q=80&w=1974&auto=format&fit=crop&grayscale=1" alt="Varsity Jacket Alt" class="product-img hover-img">
+                            <div class="product-actions">
+                                <button class="action-btn" title="Quick View"><i class="ph ph-eye"></i></button>
+                                <button class="action-btn" title="Add to Wishlist"><i class="ph ph-heart"></i></button>
+                                <button class="action-btn add-to-cart" title="Add to Cart"><i class="ph ph-shopping-bag"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Vintage Strengthwear Jacket</h3>
+                            <div class="product-price">
+                                <span class="old-price">$180.00</span>
+                                <span class="new-price">$140.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card reveal-up" style="transition-delay: 0.1s">
+                        <div class="product-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1578681994506-b8f463449011?q=80&w=1935&auto=format&fit=crop" alt="Beanie" class="product-img main-img">
+                            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1964&auto=format&fit=crop" alt="Beanie Alt" class="product-img hover-img">
+                            <div class="product-actions">
+                                <button class="action-btn" title="Quick View"><i class="ph ph-eye"></i></button>
+                                <button class="action-btn" title="Add to Wishlist"><i class="ph ph-heart"></i></button>
+                                <button class="action-btn add-to-cart" title="Add to Cart"><i class="ph ph-shopping-bag"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Signature Knit Beanie</h3>
+                            <div class="product-price">
+                                <span class="new-price">$35.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card reveal-up" style="transition-delay: 0.2s">
+                        <div class="product-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1552046122-03184de85e08?q=80&w=1974&auto=format&fit=crop" alt="Crossbody Bag" class="product-img main-img">
+                            <img src="https://images.unsplash.com/photo-1547949003-9792a18a2601?q=80&w=2070&auto=format&fit=crop" alt="Crossbody Bag Alt" class="product-img hover-img">
+                            <div class="product-actions">
+                                <button class="action-btn" title="Quick View"><i class="ph ph-eye"></i></button>
+                                <button class="action-btn" title="Add to Wishlist"><i class="ph ph-heart"></i></button>
+                                <button class="action-btn add-to-cart" title="Add to Cart"><i class="ph ph-shopping-bag"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Tactical Crossbody Bag</h3>
+                            <div class="product-price">
+                                <span class="new-price">$85.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-card reveal-up" style="transition-delay: 0.3s">
+                        <div class="product-image-wrapper">
+                            <span class="badge limited-badge">Almost Gone</span>
+                            <img src="https://images.unsplash.com/photo-1617391764187-577edcebe983?q=80&w=1937&auto=format&fit=crop" alt="Pants" class="product-img main-img">
+                            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1974&auto=format&fit=crop" alt="Pants Alt" class="product-img hover-img">
+                            <div class="product-actions">
+                                <button class="action-btn" title="Quick View"><i class="ph ph-eye"></i></button>
+                                <button class="action-btn" title="Add to Wishlist"><i class="ph ph-heart"></i></button>
+                                <button class="action-btn add-to-cart" title="Add to Cart"><i class="ph ph-shopping-bag"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Cargo Parachute Pants</h3>
+                            <div class="product-price">
+                                <span class="new-price">$110.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5 reveal-up">
+                    <a href="#" class="btn btn-outline magnetic-btn">VIEW ALL PRODUCTS</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Limited Edition / Countdown Timer -->
+        <section class="limited-edition-section">
+            <div class="limited-image">
+                <img src="https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=2070&auto=format&fit=crop" alt="Limited Edition Release">
+            </div>
+            <div class="limited-content reveal-right">
+                <span class="badge new-badge mb-3">EXCLUSIVE DROP</span>
+                <h2 class="section-title">THE NOIR COLLECTION</h2>
+                <p class="section-desc">An extremely limited release featuring Japanese denim and Italian leather detailing. Only 50 pieces available worldwide.</p>
+                
+                <div class="countdown-timer">
+                    <div class="time-block">
+                        <span class="time-val" id="days">02</span>
+                        <span class="time-label">DAYS</span>
+                    </div>
+                    <div class="time-block">
+                        <span class="time-val" id="hours">14</span>
+                        <span class="time-label">HRS</span>
+                    </div>
+                    <div class="time-block">
+                        <span class="time-val" id="minutes">45</span>
+                        <span class="time-label">MIN</span>
+                    </div>
+                    <div class="time-block">
+                        <span class="time-val" id="seconds">30</span>
+                        <span class="time-label">SEC</span>
+                    </div>
+                </div>
+                
+                <a href="#" class="btn btn-primary magnetic-btn">NOTIFY ME</a>
+            </div>
+        </section>
+
+        <!-- Bento Grid / Categories -->
+        <section class="categories-section section-padding bg-light">
+            <div class="container">
+                <div class="bento-grid">
+                    <a href="#" class="bento-item item-large reveal-up">
+                        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=1965&auto=format&fit=crop" alt="Hoodies">
+                        <div class="bento-overlay">
+                            <h3>PREMIUM HOODIES</h3>
+                            <span>Explore</span>
+                        </div>
+                    </a>
+                    <a href="#" class="bento-item reveal-up" style="transition-delay: 0.1s">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=2080&auto=format&fit=crop" alt="Tees">
+                        <div class="bento-overlay">
+                            <h3>OVERSIZED TEES</h3>
+                            <span>Explore</span>
+                        </div>
+                    </a>
+                    <a href="#" class="bento-item reveal-up" style="transition-delay: 0.2s">
+                        <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=1974&auto=format&fit=crop" alt="Sneakers">
+                        <div class="bento-overlay">
+                            <h3>FOOTWEAR</h3>
+                            <span>Explore</span>
+                        </div>
+                    </a>
+                    <a href="#" class="bento-item item-wide reveal-up" style="transition-delay: 0.3s">
+                        <img src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?q=80&w=2165&auto=format&fit=crop" alt="Accessories">
+                        <div class="bento-overlay">
+                            <h3>ACCESSORIES</h3>
+                            <span>Explore</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Video / Cinematic -->
+        <section class="video-section">
+            <div class="video-container">
+                <!-- Using an image as a poster since actual video files are unavailable, but simulating the layout -->
+                <div class="video-bg" style="background-image: url('https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?q=80&w=2165&auto=format&fit=crop');"></div>
+                <div class="video-overlay"></div>
+                <div class="play-btn magnetic-btn">
+                    <i class="ph ph-play-fill"></i>
+                </div>
+                <div class="video-text text-center reveal-up">
+                    <h2 class="section-title">BEHIND THE SEAMS</h2>
+                    <p class="section-desc text-white">Witness the craftsmanship that defines our legacy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Reviews Slider -->
+        <section class="reviews-section section-padding">
+            <div class="container text-center">
+                <h2 class="section-title reveal-up">THE VERDICT</h2>
+                <div class="reviews-slider reveal-up mt-5">
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i>
+                        </div>
+                        <p class="review-text">"The heavyweight hoodie is the best piece of clothing I've ever owned. The fit is perfect, the materials are incredible, and it just commands attention. Worth every penny."</p>
+                        <h4 class="reviewer">- Marcus T.</h4>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i>
+                        </div>
+                        <p class="review-text">"Nevermind perfectly bridges the gap between luxury fashion and everyday streetwear. The attention to detail on their cargo pants is unmatched."</p>
+                        <h4 class="reviewer">- Sarah J.</h4>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i>
+                        </div>
+                        <p class="review-text">"I bought the limited edition jacket and the quality blew me away. Shipping was fast, packaging was premium. They have a lifelong customer."</p>
+                        <h4 class="reviewer">- David L.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Gallery -->
+        <section class="gallery-section">
+            <div class="gallery-header text-center reveal-up">
+                <h2>@NEVERMIND_STUDIOS</h2>
+                <p>Join the movement.</p>
+            </div>
+            <div class="ig-grid">
+                <a href="#" class="ig-item"><img src="https://images.unsplash.com/photo-1512374382149-233c42b6a83b?q=80&w=1965&auto=format&fit=crop" alt="IG 1"><i class="ph ph-instagram-logo"></i></a>
+                <a href="#" class="ig-item"><img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?q=80&w=1935&auto=format&fit=crop" alt="IG 2"><i class="ph ph-instagram-logo"></i></a>
+                <a href="#" class="ig-item"><img src="https://images.unsplash.com/photo-1513094735237-8f2714d57c13?q=80&w=1935&auto=format&fit=crop" alt="IG 3"><i class="ph ph-instagram-logo"></i></a>
+                <a href="#" class="ig-item"><img src="https://images.unsplash.com/photo-1485231183945-fffde7ac0570?q=80&w=1974&auto=format&fit=crop" alt="IG 4"><i class="ph ph-instagram-logo"></i></a>
+                <a href="#" class="ig-item"><img src="https://images.unsplash.com/photo-1550614000-4b95d466f287?q=80&w=1974&auto=format&fit=crop" alt="IG 5"><i class="ph ph-instagram-logo"></i></a>
+            </div>
+        </section>
+
+        <!-- Stats Counter -->
+        <section class="stats-section section-padding parallax" style="background-image: url('https://images.unsplash.com/photo-1512413914418-289569ce4ce8?q=80&w=2070&auto=format&fit=crop');">
+            <div class="overlay"></div>
+            <div class="container relative z-10">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="150">0</h3><span>K+</span>
+                        <p>Global Orders</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="98">0</h3><span>%</span>
+                        <p>Satisfaction</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="50">0</h3><span>+</span>
+                        <p>Countries Shipped</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="12">0</h3><span></span>
+                        <p>Exclusive Drops</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section section-padding bg-light">
+            <div class="container">
+                <div class="split-row">
+                    <div class="split-content reveal-left" style="padding: 0 5% 0 0;">
+                        <h2 class="section-title">AT YOUR SERVICE</h2>
+                        <p class="section-desc">Have questions? We have answers. If you can't find what you're looking for, our concierges are available 24/7.</p>
+                        <a href="#contact" class="btn btn-outline magnetic-btn mt-4">CONTACT CONCIERGE</a>
+                    </div>
+                    <div class="split-content" style="padding: 0;">
+                        <div class="accordion reveal-right">
+                            <div class="accordion-item active">
+                                <button class="accordion-header">What is your return policy? <i class="ph ph-caret-down"></i></button>
+                                <div class="accordion-content">
+                                    <p>We offer a 30-day return policy for all unworn and unwashed items with original tags attached. Please contact our support team to initiate a luxury return experience.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">Do you ship internationally? <i class="ph ph-caret-down"></i></button>
+                                <div class="accordion-content">
+                                    <p>Yes, we ship to over 50 countries worldwide via premium courier services. Shipping costs and delivery times are calculated at checkout.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">How do I track my order? <i class="ph ph-caret-down"></i></button>
+                                <div class="accordion-content">
+                                    <p>Once your order has shipped, you will receive an email with a tracking number and a link to track your package securely online.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">When is the next limited drop? <i class="ph ph-caret-down"></i></button>
+                                <div class="accordion-content">
+                                    <p>Our limited edition capsules are released unannounced. The only way to secure early access is by joining our exclusive mailing list.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <h2 class="footer-logo">NEVERMIND</h2>
+                    <p class="footer-desc">Premium luxury streetwear defining the modern era of fashion. Elevate your wardrobe with our exclusive collections.</p>
+                    <div class="social-links">
+                        <a href="#" class="magnetic-btn"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="#" class="magnetic-btn"><i class="ph ph-twitter-logo"></i></a>
+                        <a href="#" class="magnetic-btn"><i class="ph ph-tiktok-logo"></i></a>
+                        <a href="#" class="magnetic-btn"><i class="ph ph-facebook-logo"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Mens Collection</a></li>
+                        <li><a href="#">Womens Collection</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col newsletter-col">
+                    <h4 class="footer-heading">Stay in the Loop</h4>
+                    <p>Subscribe to our newsletter for exclusive offers, early access to drops, and style inspiration.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit"><i class="ph ph-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NEVERMIND. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top magnetic-btn">
+        <i class="ph ph-arrow-up"></i>
+    </button>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
+
